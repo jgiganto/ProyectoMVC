@@ -20,6 +20,22 @@ namespace ProyectoMVC.Controllers
             {
                 ViewBag.Mensaje = "Aplicacion: " + app + ", version : " + version.GetValueOrDefault();
             }
+            else
+            {
+                ViewBag.Mensaje = "Aplicacion: " + app + ", version : " + dato;
+            }
+            return View();
+        }
+        //GET: VistaControladorPOST
+        public ActionResult VistaControladorPOST()
+        {
+            return View();
+        }
+        //POST: VistaControladorPOST
+        [HttpPost] //importante si no nunca entratrá
+        public ActionResult VistaControladorPOST(String nombre)
+        {
+            ViewBag.Mensaje = "Su nombre es: " + nombre;
             return View();
         }
     }

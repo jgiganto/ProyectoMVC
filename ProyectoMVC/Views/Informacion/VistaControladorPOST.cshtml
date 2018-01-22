@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "VistaControladorPOST";
+}
+
+<h2>VistaControladorPOST</h2>
+
+<form method="post">
+    <div>
+        <label>Introduzca su nombre: </label>
+        <input type="text" name="nombre" class="form-control" /><br />
+        <button type="submit" class="btn-success">Enviar Datos</button>
+
+        <hr />
+        <h3 style="color:aquamarine">@ViewBag.Mensaje</h3>
+    </div>
+</form>

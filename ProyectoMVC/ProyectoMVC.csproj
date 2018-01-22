@@ -192,6 +192,7 @@
     <Content Include="Views\Personas\Index.cshtml" />
     <Content Include="Views\Personas\Lista.cshtml" />
     <Content Include="Views\Informacion\VistaControladorGET.cshtml" />
+    <Content Include="Views\Informacion\VistaControladorPOST.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
