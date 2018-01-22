@@ -1,0 +1,23 @@
+﻿@model ProyectoMVC.Models.Persona
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h3>PERSONA</h3>
+<dl>
+    <dt>
+         NOMBRE :@Model.Nombre
+    </dt>
+    <dd>
+        APELLIDO @Model.Apellidos
+    </dd>
+    <dd>
+        EDAD: @Model.Edad
+    </dd>
+
+</dl>
+<h3 style="color:blueviolet">@ViewData["PRUEBA"]</h3>
+<h3 style="color:blueviolet">@ViewBag.Contenido</h3>
+
