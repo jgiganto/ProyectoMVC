@@ -23,6 +23,13 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Personas", "Lista", "Personas")</li>
+                    <li>@Html.ActionLink("Persona2", "Index", "Personas"
+                       ,new { dato1=12,dato2="Hola"},null)</li>
+
+                    <li>@Html.ActionLink("Datos GET", "VistaControladorGET", "Informacion",
+                    new { app = "Visual Studio.net" }, null )</li>
+                    <li>@Html.ActionLink("Datos GET", "VistaControladorGET", "Informacion")</li>
                 </ul>
             </div>
         </div>

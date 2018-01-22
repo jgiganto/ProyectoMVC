@@ -24,18 +24,27 @@ namespace ProyectoMVC.Controllers
         public ActionResult Lista()
         {
 
-            ConjuntoPersonas lista = new ConjuntoPersonas();
+
+
+            List<Persona> lista = new List<Persona>();
+
             Persona personas = new Persona();
-            Persona persona2 = new Persona();
-            personas.Nombre = "Miles";
-            personas.Apellidos = "Davis";
-            personas.Edad = 21;
-            lista.ListaPersonas.Add(personas);
-            personas.Nombre = "John";
-            personas.Apellidos = "Coltrane";
-            personas.Edad = 19;
-            lista.ListaPersonas.Add(personas);
-            return View(personas);
+            {
+                personas.Nombre = "Miles";
+                personas.Apellidos = "Davis";
+                personas.Edad = 21;
+                lista.Add(personas);
+            }
+             personas = new Persona();
+            {
+                personas.Nombre = "John";
+                personas.Apellidos = "Coltrane";
+                personas.Edad = 19;
+                lista.Add(personas);
+            }
+            
+            
+            return View(lista);
 
         }
        

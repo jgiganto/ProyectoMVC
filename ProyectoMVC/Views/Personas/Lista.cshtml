@@ -1,4 +1,8 @@
-﻿@model ProyectoMVC.Models.ConjuntoPersonas
+﻿@model List<ProyectoMVC.Models.Persona>
+
+    @*@model  ProyectoMVC.Models.ConjuntoPersonas*@
+
+
 @{
     ViewBag.Title = "Lista";
 }
@@ -6,5 +10,11 @@
 <h2>Lista</h2>
 
 
- <h1>@Model.ListaPersonas[1].ToString();</h1>
-@foreach()
+ <h1>CONJUNTO DE PERSONAS</h1>
+<ul>
+    @foreach (ProyectoMVC.Models.Persona persona in Model)
+    {
+        <li>@persona.Nombre,@persona.Apellidos,@persona.Edad</li>
+    }
+    
+</ul>
