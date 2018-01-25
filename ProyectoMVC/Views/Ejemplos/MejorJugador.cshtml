@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "MejorJugador";
+}
+
+<h2>Mejor Jugador</h2>
+<form method="post">
+    <div>
+        <label>Mejor jugador del mundo:</label>
+        <input type="text" name="Nombre" />
+    </div>
+    <div>
+        <label>Mejor equipo:</label>
+        <input type="text" name="Equipo" />
+    </div>
+    <div>
+        <label>Edad:</label>
+        <input type="text" name="Edad" />
+    </div>
+    <div>
+        <button type="submit">Enviar jugador</button>
+    </div>
+</form>
+<h2 style="color:blueviolet">
+    @ViewBag.Mensaje
+</h2>
+

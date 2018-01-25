@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Plantilla personalizada para la vistas</title>
+    
+    @Styles.Render("~/css/bootstrap.min.css")
+    @RenderSection("estilos",required:false)
+
+</head>
+<body>
+    <h1 style="color:blueviolet" id="titulo">Soy la plantilla principal del proyecto</h1>
+    <h4 style="color:lightcoral">@*INDICAR LA PAGINA ACTUAL*@
+    @RenderSection("Titulopagina",false)
+    </h4>
+    <div> 
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jsmibundle")
+    @RenderSection("scripts",required:false)
+
+
+    <script>
+        $(document).ready(function () {
+            $("#titulo").text("Título desde JQuery");
+        });
+    </script>
+    
+</body>
+</html>

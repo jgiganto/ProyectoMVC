@@ -1,0 +1,32 @@
+﻿
+@model List<int>
+
+@{
+    ViewBag.Title = "Collatz";
+}
+
+
+<h2>Collatz</h2>
+<h2>Conjetura de Collatz</h2>
+
+<ul>
+        @foreach (int num in Model)
+        {
+        <li>
+            @Html.ActionLink("Número " + num, "Collatz", "Ejemplos"
+                     , new { numero = num }, null)
+        </li>
+        }
+</ul>
+<hr />
+@if (ViewBag.Collatz != null)
+{
+    <ul>
+        @foreach (int num in ViewBag.Collatz)
+        {
+            <li>@num</li>
+        }
+    </ul>
+}
+
+

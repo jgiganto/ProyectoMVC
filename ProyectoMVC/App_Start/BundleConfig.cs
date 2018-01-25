@@ -26,6 +26,15 @@ namespace ProyectoMVC
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/bundles/jsmibundle").Include(
+                      "~/js/jquery-1.10.2.min.js",
+                      "~/js/bootstrap.min.js"));
+
+
+            
         }
     }
 }

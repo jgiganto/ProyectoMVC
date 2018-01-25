@@ -142,6 +142,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DisenoController.cs" />
+    <Compile Include="Controllers\EjemplosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InformacionController.cs" />
     <Compile Include="Controllers\PersonasController.cs" />
@@ -149,16 +151,25 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ConjuntoPersonas.cs" />
+    <Compile Include="Models\Jugador.cs" />
+    <Compile Include="Models\Numeros.cs" />
     <Compile Include="Models\Persona.cs" />
+    <Compile Include="Models\Tabla.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\sweetalert2.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\rana.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\sweetalert2.all.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -193,6 +204,14 @@
     <Content Include="Views\Personas\Lista.cshtml" />
     <Content Include="Views\Informacion\VistaControladorGET.cshtml" />
     <Content Include="Views\Informacion\VistaControladorPOST.cshtml" />
+    <Content Include="Views\Ejemplos\SumarNumeros.cshtml" />
+    <Content Include="Views\Ejemplos\TablaMultiplicar.cshtml" />
+    <Content Include="Views\Ejemplos\TablaMultiplicar2.cshtml" />
+    <Content Include="Views\Ejemplos\Collatz.cshtml" />
+    <Content Include="Views\Ejemplos\MejorJugador.cshtml" />
+    <Content Include="Views\Shared\_MiPlantilla.cshtml" />
+    <Content Include="Views\Diseno\Index.cshtml" />
+    <Content Include="Views\Diseno\Vista.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

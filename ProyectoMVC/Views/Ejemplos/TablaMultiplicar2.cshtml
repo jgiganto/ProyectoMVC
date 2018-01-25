@@ -1,0 +1,32 @@
+﻿
+@model List<ProyectoMVC.Models.Tabla>
+
+@{
+    ViewBag.Title = "TablaMultiplicar2";
+}
+
+<h2>TablaMultiplicar2</h2>
+<form method="post">
+    <h1>Introduzca un numero</h1><input type="text" name="numero" class="form-control" />
+    <table>
+        <tr><th>OPERACION</th><th>RESULTADO</th></tr>
+
+
+    </table>
+    <button type="submit" class="btn-success">Tabla Multiplicar</button>
+
+</form>
+@if (Model != null)
+{
+    <table class="table-bordered">
+        <tr><th>OPERACION</th><th>RESULTADO</th></tr>
+        @foreach(ProyectoMVC.Models.Tabla t in Model)
+        {
+            <tr>
+                <td>@t.Operacion</td>
+                <td>@t.Resultado</td>
+            </tr>
+
+        }
+       </table>
+}

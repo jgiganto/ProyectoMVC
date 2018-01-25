@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Titulopagina{
+    Página INDEX
+    }
+
+
+
+@section estilos
+{
+    @Styles.Render("~/css/sweetalert2.min.css");
+    }
+@section scripts{
+    @Scripts.Render("~/js/sweetalert2.all.min.js");
+<script>
+        $(document).ready(function () {
+            $("#botonmensaje").click(function () {
+                swal("Has pulsado el boton ");
+            });
+        });
+</script>
+    }
+
+<button id="botonmensaje" type="button" >Mostrar mensaje</button>
+
+<h2>Página con diseño personalizado</h2>
+
